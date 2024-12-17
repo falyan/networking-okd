@@ -1,0 +1,13 @@
+$TTL 8h
+@ IN  SOA ns1.okd.palyan.lan. root (
+      2024080174  ; serial
+      3H    ; refresh (3 hours)
+      30M   ; retry (30 minutes)
+      2W    ; expiry (2 weeks)
+      1W )    ; minimum (1 week)
+  IN  NS  ns1.okd.palyan.lan.
+2.64.168.192.in-addr.arpa.  IN  PTR ns1.okd.palyan.lan.
+3.64.168.192.in-addr.arpa.  IN  PTR api.okd.palyan.lan.
+3.64.168.192.in-addr.arpa.  IN  PTR api-int.okd.palyan.lan.
+3.64.168.192.in-addr.arpa.  IN  PTR control-plane.okd.palyan.lan.
+4.64.168.192.in-addr.arpa.  IN  PTR bastion.okd.palyan.lan.

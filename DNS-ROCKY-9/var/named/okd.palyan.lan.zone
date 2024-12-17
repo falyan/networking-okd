@@ -1,0 +1,18 @@
+$TTL 8h
+@ IN  SOA ns1.okd.palyan.lan. root (
+      2024080174  ; serial
+      3H    ; refresh (3 hours)
+      30M   ; retry (30 minutes)
+      2W    ; expiry (2 weeks)
+      1W )    ; minimum (1 week)
+  IN  NS  ns1.okd.palyan.lan.
+  IN  MX 10 smtp.okd.palyan.lan.
+ns1.okd.palyan.lan.     IN  A 192.168.64.2
+smtp.okd.palyan.lan.    IN  A 192.168.64.2
+helper.palyan.lan       IN  A 192.168.64.2
+helper.okd.palyan.lan.  IN  A 192.168.64.2
+api.okd.palyan.lan.     IN  A 192.168.64.3
+api-int.okd.palyan.lan. IN  A 192.168.64.3
+*.apps.okd.palyan.lan.  IN  A 192.168.64.3
+control-plane.okd.palyan.lan. IN  A 192.168.64.3
+bastion.okd.palyan.lan.   IN  A   192.168.64.4
